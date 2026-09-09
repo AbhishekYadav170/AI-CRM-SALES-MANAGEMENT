@@ -6,6 +6,8 @@ import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import Leads from './pages/Leads';
 import LeadDetail from './pages/LeadDetail';
+import Deals from './pages/Deals';
+import Team from './pages/Team';
 
 export default function App() {
   return (
@@ -39,6 +41,9 @@ export default function App() {
               </ProtectedRoute>
             }
           />
+
+          <Route path="/deals" element={ <ProtectedRoute> <Deals /> </ProtectedRoute> } /> 
+          <Route path="/team" element={ <ProtectedRoute> <Team /> </ProtectedRoute> } />
 
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="*" element={<Navigate to="/dashboard" replace />} />

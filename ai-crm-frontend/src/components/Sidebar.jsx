@@ -25,6 +25,8 @@ export default function Sidebar() {
       <nav className="flex-1 p-4 space-y-1">
         <NavLink to="/dashboard" className={linkClass}>📊 Dashboard</NavLink>
         <NavLink to="/leads" className={linkClass}>🧑‍💼 Leads</NavLink>
+        <NavLink to="/deals" className={linkClass}>🤝 Deals</NavLink>
+        <NavLink to="/team" className={linkClass}>👥 Team</NavLink>
       </nav>
 
       <div className="p-4 border-t border-slate-200">
