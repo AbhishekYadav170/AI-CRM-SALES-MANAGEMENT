@@ -10,6 +10,7 @@ const dealRoutes = require('./routes/dealRoutes');
 const authRoutes = require('./routes/authRoutes');
 const leadRoutes = require('./routes/leadRoutes');
 const aiRoutes = require('./routes/aiRoutes');
+const customerRoutes = require("./routes/customerRoutes");
 
 // DB connect
 connectDB();
@@ -29,6 +30,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/leads', leadRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/deals', dealRoutes);
+app.use("/api/customers", customerRoutes);
 // aage yahan deal, task, ai routes bhi add honge:
 // app.use('/api/ai', aiRoutes);
 

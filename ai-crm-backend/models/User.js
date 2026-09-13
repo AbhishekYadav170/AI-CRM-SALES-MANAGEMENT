@@ -28,7 +28,7 @@ const userSchema = new mongoose.Schema(
     },
     role: {
       type: String,
-      enum: ['superadmin', 'admin', 'agent'],
+      enum: ['superadmin', 'admin', 'agent', 'agent'],
       default: 'admin', // signup karne wala pehla user 'admin' hota hai (business owner)
     },
     phone: {
