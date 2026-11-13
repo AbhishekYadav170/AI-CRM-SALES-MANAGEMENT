@@ -3,10 +3,7 @@ const Lead = require('../models/Lead');
 const Company = require('../models/Company');
 const { getAIReply, scoreConversation } = require('../services/aiService');
 
-// @desc    Customer se message aata hai, AI reply generate karke conversation mein save karta hai
-// @route   POST /api/ai/chat
-// @access  Private (agent/admin ki taraf se test ke liye; real mein website widget/WhatsApp webhook isse call karega)
-// body: { leadId, message, channel }
+
 const chatWithAI = async (req, res, next) => {
   try {
     const { leadId, message, channel } = req.body;
